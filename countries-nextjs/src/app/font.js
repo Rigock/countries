@@ -1,6 +1,6 @@
 import { Nunito_Sans as nunitoSans } from '@next/font/google'
 
-const nunito = nunitoSans({
+export const font = nunitoSans({
   subsets: ['latin'],
   weight: ['300', '600', '800']
 })
