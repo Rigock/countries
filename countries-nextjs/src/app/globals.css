@@ -29,5 +29,47 @@ body {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 180px;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 20px;
+  background-color: #202D36;
+  color: #fff
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.grid .info {
+  background-color: #2b3743;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 998px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

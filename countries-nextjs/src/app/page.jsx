@@ -1,6 +1,9 @@
+import { ListOfCountries } from './components/ListOfCountries';
 
 export default function Home() {
   return (
-    <h1>Holas</h1>
+    <section>
+      <ListOfCountries />
+    </section>
   )
 }
