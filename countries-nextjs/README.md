@@ -2,6 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Para visualización de diseño se realizan instalaciones de: 
+  - @heroicons/react
+  - @next/font
+
+La aplicación se realiza en Next Js 13, apoyada en React, para el consumo del endpoint de countries,
+Endpoint: https://restcountries.com/#rest-countries
+Principales componentes: 
+  - ListOfCountries
+  - Header
+  - Country(page)
+
+Se logra hacer consultas al endpoint y visualizar la información, se maneja tema responsive y se espera para futuras versiones la implementación del cambio de tema Dark Mode,
+adicional, se espera implementar los respectivos filtros.
+
+Por lo anterior, se recomienda instalar primero las dependencias de node_modules
+
+```bash
+npm install 
+```
 First, run the development server:
 
 ```bash

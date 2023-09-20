@@ -5,7 +5,7 @@ export  function SearchBox () {
     <section className={styles.filter}>
       <form  className={styles.formControl}>
         <input 
-         type="search"name="search" id="seearch"
+         type="search"name="search" id="search"
          placeholder="Search for a country"/>
       </form>
 
