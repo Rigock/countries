@@ -1,3 +1,4 @@
+
 :root {
   --dark-bg-color: hsl(207, 26%, 17%);
   --article-color: hsl(209, 23%, 22%);
@@ -33,6 +34,7 @@ body {
 
 .grid article img {
   border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 
 .grid .info {

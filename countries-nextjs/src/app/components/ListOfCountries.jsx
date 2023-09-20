@@ -2,14 +2,17 @@ import Link from 'next/link'
 import { FormatNumber } from './FormatNumber' 
 import { SearchBox } from './SearchBox' 
 
+
+
 const fetchCountries = () => {
   return fetch('https://restcountries.com/v3.1/all')
   .then(res => res.json())
 }
 
 export async function ListOfCountries () {
-  const countries = await fetchCountries()
   
+const countries = await fetchCountries()
+
   return (
     <>
     <SearchBox />
@@ -22,7 +25,7 @@ export async function ListOfCountries () {
                   <img src={ `${country.flags.svg}`} alt={country.name.common} />
                 </Link>
               <div className='info'>
-                <h3 style={{ margin: '8px 0px' }}>{country.name.common}</h3>
+                <h3 style={{ margin: '8px 0px' }} className='countryName'>{country.name.common}</h3>
                 <h4>Population: <span>{ FormatNumber(population) }</span></h4>
                 <h4>Region: <span>{ region }</span></h4>
                 <h4>Capital: <span>{ capital }</span></h4>
@@ -33,5 +36,4 @@ export async function ListOfCountries () {
       </section>
     </>
   )
-
 }

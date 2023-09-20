@@ -20,6 +20,7 @@ export default async function Country ({ children, params }) {
         <div className={styles.countryDetails}>
           <div>
             <h2>{country[0].name.common}</h2>
+            {/* TO DO improve performance with NativeName */}
             {/* <p><strong>Native Name: </strong> { nameJson.nativeName.deu.common}</p> */}
             <h5>Population:  <span>{FormatNumber(country[0].population)} </span></h5>
             <h5>Region: <span>{country[0].region}</span> </h5>
@@ -28,6 +29,7 @@ export default async function Country ({ children, params }) {
           <div>
             <h5>Capital: <span>{country[0].capital}</span>  </h5>
             <h5>Top level Domain: <span>{country[0].tld[0]}</span> </h5> 
+            {/* TO DO improve performance with currencies */}
             {/* <h5>Currencies: </h5> {country[0].currencies[0].name} */}
             <h5>Languages: <span> {country[0].languages[0]}</span></h5> 
           </div>
