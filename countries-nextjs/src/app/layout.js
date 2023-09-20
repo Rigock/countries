@@ -1,5 +1,6 @@
 import './globals.css'
 import { font } from './font'
+import { Header } from './components/Header'
 
 export const metadata = {
   title: 'Countries App',
@@ -10,7 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        {children}
+        <Header />
+        <div>
+          {children}
+        </div>
       </body>
     </html>
   )
