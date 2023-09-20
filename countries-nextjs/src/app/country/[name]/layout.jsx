@@ -12,8 +12,6 @@ export default async function Country ({ children, params }) {
   const { name } = params
   const country = await fetchSingleCountry(name)
   const nameJson = country[0].name
-  // console.log('country name : : ', country[0]);
-  // console.log('country native name : : ', nameJson.nativeName.deu.common);
   return (
     <article>
       {children}

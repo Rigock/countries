@@ -10,14 +10,6 @@ const fetchCountries = () => {
 export async function ListOfCountries () {
   const countries = await fetchCountries()
   
-  // return  countries.map(country => (
-  //   <article key={country.name.common}>
-  //     <Link href={`/country/${country.name.common}`}>
-  //       {country.name.common}
-  //     </Link>
-  //   </article>
-  // ))  
-
   return (
     <>
     <SearchBox />
