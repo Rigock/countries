@@ -1,0 +1,91 @@
+.country {
+  padding: 50px;
+}
+
+.country  .countryDetails div {
+  margin: 30px 0;
+}
+
+.country  .countryDetails div h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.country  .countryDetails div h5 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.country  .countryDetails div h5 span {
+  font-weight: 300;
+}
+
+.country  h3 {
+  font-weight: 600;
+}
+
+.country .borders {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country  .borders ul {
+  margin: 10px;
+  background-color: var(--article-color);
+  padding: 3px 20px;
+  border-radius: 3px;
+  box-shadow: 0 5px 20px hsla(200, 15%, 8%, 0.5);
+}
+
+.country  .borders ul.light-theme {
+  background-color: var(--light-mode-background);
+}
+
+.flag {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .flag {
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .country  .countryInner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .country .countryDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .flag {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .country {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1366px) {
+  .country {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .country {
+    max-width: 1400px;
+  }
+  .flag {
+    width: 520px;
+  }
+}

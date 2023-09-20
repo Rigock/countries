@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import { MoonIcon } from '@heroicons/react/24/solid'
 
 export function Header () {
   return (
@@ -8,7 +9,7 @@ export function Header () {
           <h3>Where in the world?</h3>
         </div>
         <div>
-          <i className='fas fa-moon'></i>Dark Mode
+          <MoonIcon className={styles.iconWidth} />Dark Mode
         </div>
       </header>
     </>
